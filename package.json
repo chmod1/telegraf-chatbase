@@ -1,0 +1,25 @@
+{
+  "name": "telegraf-chatbase",
+  "version": "1.0.0",
+  "description": "Telegraf chatbase middleware",
+  "keywords": [
+    "telegram",
+    "telegram bot",
+    "telegraf",
+    "chatbase",
+    "middleware",
+    "stats"
+  ],
+  "main": "src/index.js",
+  "files": [
+    "src/*"
+  ],
+  "repository": "https://github.com/chmod1/telegraf-chatbase",
+  "homepage": "https://github.com/chmod1/telegraf-chatbase",
+  "author": "chmod",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "@google/chatbase": "^1.1.2"
+  }
+}
