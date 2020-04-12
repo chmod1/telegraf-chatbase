@@ -31,6 +31,10 @@ export class ChatbaseContext {
             this.message.setAsFeedback()
         }
 
+        if (!isHandled) {
+            this.message.setAsNotHandled()
+        }
+
         if (intent) {
             this.message.setIntent(intent)
         }
