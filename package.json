@@ -10,16 +10,21 @@
     "middleware",
     "stats"
   ],
-  "main": "src/index.js",
-  "files": [
-    "src/*"
-  ],
+  "main": "lib/index.js",
   "repository": "https://github.com/chmod1/telegraf-chatbase",
   "homepage": "https://github.com/chmod1/telegraf-chatbase",
   "author": "chmod",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "prepublish": "babel src -d lib"
+  },
   "dependencies": {
     "@google/chatbase": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5"
   }
 }
